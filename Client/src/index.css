@@ -1,0 +1,175 @@
+/* ---------- General styles ---------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  color: #222;
+}
+
+img {
+  max-width: 100%;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  position: sticky; /* keeps the bar fixed at the top while scrolling */
+  top: 0;
+  z-index: 100;
+  background-color: #115e59;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  background-color: #0d9488;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0f766e;
+}
+
+/* ---------- Home ---------- */
+.home {
+  text-align: center;
+}
+
+.mission {
+  background-color: white;
+  padding: 15px;
+  margin: 25px auto;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.thank-you {
+  background-color: #bbf7d0;
+  padding: 12px;
+  border-radius: 6px;
+}
+
+/* ---------- About ---------- */
+.about {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
+
+/* ---------- Cards (Projects and Services) ---------- */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+/* ---------- Education ---------- */
+.education-item {
+  background-color: white;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #0d9488;
+  border-radius: 6px;
+}
+
+/* ---------- Contact ---------- */
+.contact {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 280px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 4px;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #e5e7eb;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}

@@ -1,0 +1,19 @@
+import express from "express";
+import ctrl from "../controllers/project.controller.js";
+import authCtrl from "../controllers/auth.controller.js";
+
+const router = express.Router();
+
+// Public: anyone can read (GET)
+// Protected: add / update / delete require sign in
+router.route("/api/projects")
+  .get(ctrl.list)
+  .post(authCtrl.requireSignin, ctrl.create)
+  .delete(authCtrl.requireSignin, ctrl.removeAll);
+
+router.route("/api/projects/:id")
+  .get(ctrl.read)
+  .put(authCtrl.requireSignin, ctrl.update)
+  .delete(authCtrl.requireSignin, ctrl.remove);
+
+export default router;
